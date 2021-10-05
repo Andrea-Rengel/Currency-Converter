@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Currency Converter</title>
+        <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+        <link href="./css/style.css" type= 'text/css' rel='stylesheet'>
+      </head>
+      <body>
+          <div class='container'>
+              <div class='header'>
+                  <h1>Currency Converter</h1>
+                  <p>Convert your currencies with one of the most <br> reliable 
+                      converters on the market</p>
+              </div>
+              <div class='form-section'>
+                  <form id='form'>
+                      <div class='input'>
+                          <label for='amount' >Amount</label>
+                          <input type='text' id='amount' required pattern="[0-9]{1,7}">
+                      </div>
+                      <span class='amount-total' id='total-amount'>0</span>
+                      <div class="select-from">
+                           <label for='form-list'>From</label>
+                           <select name='from-list' class = 'list-from' id='from-list'>
+                               <option value='from-currency'>Select a currency</option>
+                               <option value='usd'>USD - US Dollar</option>
+                               <option value='eur'>EUR - Euro</option>
+                               <option value='gbp'>GBP - British Pound</option>
+                               <option value='aud'>AUD - Australian Dollar</option>
+                               <option value='cad'>CAD - Canadian Dollar</option>
+                               <option value='brl'>BRL - Brazilian Real</option>
+                               <option value='clp'>CLP - Chilean Peso</option>
+                           </select>
+                     </div>
+                     <div class="select-to">
+                           <label for='to-list'>To</label>
+                           <select name='to-list' class = 'list-to' id='to-list'>
+                               <option value='to-currency'>Select a currency</option>
+                               <option value='usd'>USD - US Dollar</option>
+                               <option value='eur'>EUR - Euro</option>
+                               <option value='gbp'>GBP - British Pound</option>
+                               <option value='aud'>AUD - Australian Dollar</option>
+                               <option value='cad'>CAD - Canadian Dollar</option>
+                               <option value='brl'>BRL - Brazilian Real</option>
+                               <option value='clp'>CLP - Chilean Peso</option>
+                           </select>
+                     </div>
+                  </form>
+                  <span class='result' id='result'></span>
+              </div>
+          </div>
+      <script src='./js/app.js'></script>
+      <script src='./js/app2.js'></script>
+      </body>
+  </html>    
